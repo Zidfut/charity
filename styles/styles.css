@@ -24,42 +24,42 @@
 
 @font-face {
     font-family: "Manrope";
-    src: url('/fonts/Manrope-Regular.woff2');
+    src: url('../fonts/Manrope-Regular.woff2');
     font-style: normal;
     font-weight: 400;
     font-display: swap;
 }
 @font-face {
     font-family: "Manrope";
-    src: url('/fonts/Manrope-Medium.woff2');
+    src: url('../fonts/Manrope-Medium.woff2');
     font-style: normal;
     font-weight: 500;
     font-display: swap;
 }
 @font-face {
     font-family: "Manrope";
-    src: url('/fonts/Manrope-SemiBold.woff2');
+    src: url('../fonts/Manrope-SemiBold.woff2');
     font-style: normal;
     font-weight: 600;
     font-display: swap;
 }
 @font-face {
     font-family: "Manrope";
-    src: url('/fonts/Manrope-Bold.woff2');
+    src: url('../fonts/Manrope-Bold.woff2');
     font-style: normal;
     font-weight: 700;
     font-display: swap;
 }
 @font-face {
     font-family: "Cormorant Garamond";
-    src: url('/fonts/CormorantGaramond-Regular.woff2');
+    src: url('../fonts/CormorantGaramond-Regular.woff2');
     font-style: normal;
     font-weight: 400;
     font-display: swap;
 }
 @font-face {
     font-family: "Cormorant Garamond";
-    src: url('/fonts/CormorantGaramond-Bold.woff2');
+    src: url('../fonts/CormorantGaramond-Bold.woff2');
     font-style: normal;
     font-weight: 700;
     font-display: swap;
@@ -189,7 +189,7 @@ body {
             content: '';
             width: 32px;
             height: 32px;
-            mask-image: url('/images/arrow-up.svg');
+            mask-image: url('../images/arrow-up.svg');
             mask-repeat: no-repeat;
             mask-position: center;
             mask-size: contain;
@@ -589,13 +589,13 @@ body {
         }
 
         .footer__phone::before {
-            mask-image: url('/images/telephone-outline.svg');
+            mask-image: url('../images/telephone-outline.svg');
         }
         .footer__address::before {
-            mask-image: url('/images/location-outline.svg');
+            mask-image: url('../images/location-outline.svg');
         }
         .footer__email::before {
-            mask-image: url('/images/mail-outline.svg');
+            mask-image: url('../images/mail-outline.svg');
         }
 
     }
@@ -922,10 +922,10 @@ body {
             }
 
             .events__card-date::before {
-                mask-image: url('/images/calendar.svg');
+                mask-image: url('../images/calendar.svg');
             }
             .events__card-location::before {
-                mask-image: url('/images/location.svg');
+                mask-image: url('../images/location.svg');
             }
         }
     }
@@ -956,7 +956,7 @@ body {
             height: 90px;
             width: 600px;
             max-width: 100%;
-            background: url('/images/decor1.svg');
+            background: url('../images/decor1.svg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
@@ -1018,7 +1018,7 @@ body {
             width: 32px;
             height: 32px;
             flex-shrink: 0;
-            background-image: url('/images/feathers.svg');
+            background-image: url('../images/feathers.svg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
@@ -1381,32 +1381,32 @@ body {
 
             .icon--calendar {
                 &::before {
-                    mask-image: url('/images/calendar.svg');
+                    mask-image: url('../images/calendar.svg');
                 }
             }
             .icon--clock {
                 &::before {
-                    mask-image: url('/images/clock-light.svg');
+                    mask-image: url('../images/clock-light.svg');
                 }
             }
             .icon--person {
                 &::before {
-                    mask-image: url('/images/person.svg');
+                    mask-image: url('../images/person.svg');
                 }
             }
             .icon--location {
                 &::before {
-                    mask-image: url('/images/location-outline.svg');
+                    mask-image: url('../images/location-outline.svg');
                 }
             }
             .icon--phone {
                 &::before {
-                    mask-image: url('/images/telephone-outline.svg');
+                    mask-image: url('../images/telephone-outline.svg');
                 }
             }
             .icon--email {
                 &::before {
-                    mask-image: url('/images/mail-outline.svg');
+                    mask-image: url('../images/mail-outline.svg');
                 }
             }
 
@@ -1446,7 +1446,7 @@ body {
                 display: block;
                 width: 24px;
                 aspect-ratio: 1;
-                mask-image: url('/images/calendar.svg');
+                mask-image: url('../images/calendar.svg');
                 mask-repeat: no-repeat;
                 mask-position: center;
                 mask-size: cover;
@@ -1516,7 +1516,7 @@ body {
                 width: 100%;
                 max-width: 240px;
                 aspect-ratio: 6 / 1;
-                background-image: url('/images/decor1.svg');
+                background-image: url('../images/decor1.svg');
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;
@@ -1575,7 +1575,7 @@ body {
             width: 56px;
             aspect-ratio: 1;
             flex-shrink: 0;
-            background-image: url('/images/quote.svg');
+            background-image: url('../images/quote.svg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
@@ -1727,7 +1727,7 @@ body {
                     width: 22px;
                     height: 22px;
                     flex-shrink: 0;
-                    background-image: url('/images/calendar.svg');
+                    background-image: url('../images/calendar.svg');
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: contain;
@@ -1767,7 +1767,7 @@ body {
                 width: 24px;
                 height: 24px;
                 flex-shrink: 0;
-                mask-image: url('/images/arrow-right.svg');
+                mask-image: url('../images/arrow-right.svg');
                 mask-repeat: no-repeat;
                 mask-position: center;
                 mask-size: contain;
@@ -1919,15 +1919,15 @@ body {
             }
 
             &.icon--email::before {
-                background-image: url('/images/mail-outline.svg');
+                background-image: url('../images/mail-outline.svg');
             }
 
             &.icon--phone::before {
-                background-image: url('/images/telephone-outline.svg');
+                background-image: url('../images/telephone-outline.svg');
             }
 
             &.icon--location::before {
-                background-image: url('/images/location-outline.svg');
+                background-image: url('../images/location-outline.svg');
             }
         }
     }
