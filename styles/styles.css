@@ -1867,6 +1867,7 @@ body {
             padding: 0px 16px;
             height: 48px;
             border: none;
+            background: #fff;
 
             @media(max-width: 768px) {
                 padding: 0 12px;
