@@ -82,7 +82,7 @@ body, html {
 }
 
 body {
-    padding-top: 110px;
+    padding-top: 90px;
 
     @media(max-width: 1024px) {
         padding-top: 80px;
@@ -265,13 +265,14 @@ body {
 }
 
 .header {
-    padding-block: 10px;
+    padding-block: 5px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 10;
-    background-color: var(--gray-60);
+    background-color: #fff;
+    border-bottom: 1px solid var(--gray-20);
 
     @media(max-width: 1024px) {
         padding-block: 5px;
@@ -284,7 +285,7 @@ body {
     }
 
     .header__logo {
-        height: 90px;
+        height: 80px;
         position: relative;
         z-index: 10;
 
@@ -318,7 +319,7 @@ body {
         &.active {
             transform: translateY(100%);
             opacity: 1;
-            background-color: var(--gray-60);
+            background-color: #fff;
         }
 
         ul {
@@ -345,7 +346,7 @@ body {
             font-family: var(--font-family);
             font-weight: 500;
             font-size: 18px;
-            color: var(--gray-0);
+            color: var(--gray-80);
             text-decoration: none;
             transition: .3s ease;
 
@@ -381,7 +382,7 @@ body {
             font-family: var(--font-family);
             font-weight: 500;
             font-size: 20px;
-            color: var(--gray-0);
+            color: var(--gray-80);
             text-decoration: none;
             transition: .3s ease;
 
@@ -436,7 +437,7 @@ body {
             display: block;
             height: 2px;
             width: 24px;
-            background-color: #fff;
+            background-color: var(--gray-80);
             transition: transform .3s ease;
         }
 
@@ -688,7 +689,7 @@ body {
         object-fit: cover;
         object-position: center 35%;
 
-        @media(max-width: 1200px) {
+        @media(max-width: 1400px) {
             height: auto;
             object-position: center;
             aspect-ratio: 16 / 9;
