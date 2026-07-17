@@ -212,10 +212,10 @@ body {
     .section__header {
         display: flex;
         justify-content: center;
-        margin-bottom: 56px;
+        margin-bottom: 32px;
 
         @media(max-width: 1024px) {
-            margin-bottom: 32px;
+            margin-bottom: 24px;
         }
 
         @media(max-width: 768px) {
