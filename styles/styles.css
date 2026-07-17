@@ -1161,7 +1161,7 @@ body {
 
     .info__content {
         display: grid;
-        gap: 24px;
+        gap: 20px;
         justify-items: start;
         width: 100%;
         max-width: 550px;
@@ -1179,11 +1179,24 @@ body {
             max-width: 100%;
             gap: 8px;
         }
+
+        .info__content-text {
+            display: grid;
+            gap: 8px;
+        }
     }
 
     .section-title {
         text-align: left;
-        font-size: 42px;
+        font-size: 40px;
+
+        @media(max-width: 1024px) {
+            font-size: 36px;
+        }
+
+        @media(max-width: 768px) {
+            font-size: 28px;
+        }
     }
 
     p {
@@ -1199,7 +1212,6 @@ body {
 
     .btn {
         background-color: transparent;
-        margin-top: 16px;
 
         @media(max-width: 576px) {
             width: 100%;
