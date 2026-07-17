@@ -693,7 +693,7 @@ body {
     &.hero--inner {
         img {
             height: auto;
-            max-height: 700px;
+            max-height: 500px;
             object-position: center;
             aspect-ratio: initial;
         }
@@ -1066,7 +1066,7 @@ body {
         row-gap: 16px;
         font-family: var(--font-family);
         font-weight: 500;
-        font-size: 20px;
+        font-size: 18px;
         color: var(--gray-80);
 
         @media(max-width: 1024px) {
