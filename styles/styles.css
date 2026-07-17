@@ -773,6 +773,10 @@ body {
             font-weight: 500;
             font-size: 16px;
             color: var(--gray-80);
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
 
             @media(max-width: 768px) {
                 font-size: 14px;
@@ -826,13 +830,6 @@ body {
         border-radius: 24px;
         text-decoration: none;
         background-color: #ecf1f3;
-        transition: background-color .2s ease;
-
-        @media(hover: hover) {
-            &:hover {
-                background-color: #ecf1f3;
-            }
-        }
 
         img {
             display: block;
@@ -851,6 +848,10 @@ body {
             }
         }
 
+        a {
+            text-decoration: none;
+        }
+
         .events__card-title {
             font-family: var(--second-family);
             font-weight: 700;
@@ -858,6 +859,13 @@ body {
             line-height: 1.2;
             color: var(--gray-80);
             margin-bottom: 8px;
+            transition: color .3s ease;
+
+            @media(hover: hover) {
+                &:hover {
+                    color: #016d9a;
+                }
+            }
 
             @media(max-width: 768px) {
                 font-size: 22px;
@@ -871,6 +879,10 @@ body {
             font-weight: 500;
             font-size: 16px;
             color: var(--gray-80);
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
 
             @media(max-width: 768px) {
                 font-size: 14px;
