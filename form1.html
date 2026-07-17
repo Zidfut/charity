@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>Form1</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="header__logo">
+                <img src="images/logo-white.svg" alt="logo">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#">О нас</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#">Получить помощь</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#">Как помочь</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#">Организации</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#">Новости</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__contacts">
+                <a href="#" class="header__contacts-phone"><span>(406) 555-0120</span></a>
+            </div>
+            <button class="header__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="section form-page">
+        <div class="container form-page__container">
+            <div class="form-page__header">
+                <h1 class="h1 section-title">Получить помощь</h1>
+                <p>Для получения помощи, пожалуйста, заполните форму запроса.
+    Вся предоставленная информация остается строго конфиденциальной и будет использоваться нашими координаторами только для оценки вашей ситуации и предоставления вам необходимой поддержки.</p>
+            </div>
+            <form class="custom-form">
+                <div class="custom-form__item">
+                    <label for="name">Полное имя *</label>
+                    <div class="custom-form__item-input">
+                        <input type="text" name="name" id="name" placeholder="Wade Warren" required>
+                    </div>
+                </div>
+                <div class="custom-form__item">
+                    <label for="email">Адрес электронной почты*</label>
+                    <div class="custom-form__item-input icon icon--email">
+                        <input type="text" name="email" id="email" placeholder="nvt.isst.nute@gmail.com" required>
+                    </div>
+                </div>
+                <div class="custom-form__item">
+                    <label for="phone">Номер телефона*</label>
+                    <div class="custom-form__item-input icon icon--phone">
+                        <input type="text" name="phone" id="phone" placeholder="603.555.0123" required>
+                    </div>
+                </div>
+                <div class="custom-form__item">
+                    <label for="location">Расположение*</label>
+                    <div class="custom-form__item-input icon icon--location">
+                        <input type="text" name="location" id="location" placeholder="Чикаго" required>
+                    </div>
+                </div>
+                <div class="custom-form__item">
+                    <label for="help">Какая вам нужна поддержка?*</label>
+                    <div class="custom-form__item-input">
+                        <select name="help" id="help">
+                            <option value="Продовольственная помощь">Продовольственная помощь</option>
+                            <option value="Одежда и предметы первой необходимости">Одежда и предметы первой необходимости</option>
+                            <option value="Поддержка в вопросах жилья и предоставления убежища">Поддержка в вопросах жилья и предоставления убежища</option>
+                            <option value="Психологическая поддержка">Психологическая поддержка</option>
+                            <option value="Другое">Другое</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="custom-form__item">
+                    <label for="message">Чем мы можем вам помочь? (Необязательно)</label>
+                    <div class="custom-form__item-input">
+                        <textarea name="message" placeholder="Пожалуйста, кратко опишите вашу ситуацию и укажите, какая именно помощь вам необходима прямо сейчас."></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn--blue">Отправить</button>
+            </form>
+
+            
+        </div>
+    </section>
+
+    <section class="section form-page__image">
+        <img src="images/form1.png" alt="">
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__column">
+                <a href="#" class="footer__logo">
+                    <img src="images/logo-dark.svg" alt="logo">
+                </a>
+            </div>
+            
+            <div class="footer__column">
+                <nav class="footer__nav">
+                    <ul>
+                        <li><a href="#">О нас </a></li>
+                        <li><a href="#">Получить помощь</a></li>
+                        <li><a href="#">Как помочь</a></li>
+                        <li><a href="#">Организации</a></li>
+                        <li><a href="#">Новости</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer__column">
+                <div class="footer__contacts">
+                    <ul>
+                        <li>
+                            <a href="#" class="footer__contacts-item footer__phone">(406) 555-0120</a>
+                        </li>
+                        <li><span class="footer__contacts-item footer__address">Центральный общественный центр, Чикаго, Иллинойс</span></li>
+                        <li>
+                            <a href="#" class="footer__contacts-item footer__email">example@mail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__socials">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="icon" style="mask-image: url('images/instagram.svg');"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon" style="mask-image: url('images/facebook.svg')"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon" style="mask-image: url('images/tiktok.svg');"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__cta">
+                    <ul>
+                        <li><a href="#" class="btn btn--blue">Получить помощь</a></li>
+                        <li><a href="#" class="btn btn--white-bordered">Предложить поддержку</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer__copyright">
+                <span>© 2026 Powered by <a href="#" target="_blank">RUNXai.com</a></span>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+
+</body>
+</html>
