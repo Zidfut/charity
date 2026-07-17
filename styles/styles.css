@@ -81,6 +81,10 @@ body, html {
     line-height: 1.4;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     padding-top: 90px;
 
@@ -200,6 +204,8 @@ body {
 }
 
 .section {
+
+    scroll-margin-top: 80px;
 
     &:not(.hero) {
         padding-block: 56px;
@@ -819,6 +825,7 @@ body {
         height: auto;
         border-radius: 24px;
         text-decoration: none;
+        background-color: #ecf1f3;
         transition: background-color .2s ease;
 
         @media(hover: hover) {
@@ -845,15 +852,15 @@ body {
         }
 
         .events__card-title {
-            font-family: var(--font-family);
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 1.4;
+            font-family: var(--second-family);
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 1.2;
             color: var(--gray-80);
             margin-bottom: 8px;
 
             @media(max-width: 768px) {
-                font-size: 18px;
+                font-size: 22px;
                 margin-bottom: 4px;
             }
         }
@@ -1001,7 +1008,7 @@ body {
         justify-content: center;
         column-gap: 16px;
         font-family: var(--second-family);
-        font-weight: 400;
+        font-weight: 700;
         font-size: 28px;
         text-align: center;
         color: #444b4f;
