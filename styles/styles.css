@@ -12,8 +12,15 @@
 	--primary-15: #cad6dc;
 	--green-10: #eff7e3;
 	--green-80: #52c61b;
-	--orange-80: #f1a60a;
-	--orange-10: #fdf5e1;
+	--primary-1: #f7feff;
+	--green-1: #f6fff7;
+	--green-5: #e6f9e8;
+	--violet-100: #7c5ac9;
+	--violet-30: #eee6ff;
+	--violet-10: #f5f0ff;
+	--orange-100: #d97706;
+	--orange-30: #ffedcc;
+	--orange-10: #fff7e8;
 
     --container: 20px;
 
@@ -901,6 +908,10 @@ body {
             }
         }
 
+        a {
+            position: relative;
+        }
+
         .organization__card-button {
             padding: 0 24px 12px;
             margin-top: auto;
@@ -914,6 +925,59 @@ body {
                 display: block;
                 border-top: 1px solid var(--gray-60);
                 margin-bottom: 12px;
+            }
+        }
+
+        .organization__card-tags {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+
+            @media(width < 1200px) {
+                gap: 10px;
+            }
+        }
+
+        .organization__card-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            background-color: #effaff;
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 22px;
+            text-align: center;
+            color: var(--primary-100);
+            padding: 10px;
+            border: 1px solid var(--primary-100);
+
+            @media(width < 1240px) {
+                width: 44px;
+                height: 44px;
+                font-size: 18px;
+            }
+
+            img {
+                display: block;
+                width: 32px;
+                height: 32px;
+
+                @media(width < 1240px) {
+                    width: 24px;
+                    height: 24px;
+                }    
+
             }
         }
     }
