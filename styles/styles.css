@@ -822,9 +822,13 @@ body {
     }
 
     &.hero--inner {
+        background-image: none;
         img {
+            display: block;
+            width: 100%;
             height: auto;
             max-height: 500px;
+            object-fit: cover;
             object-position: center;
             aspect-ratio: initial;
         }
@@ -2161,5 +2165,93 @@ body {
     .btn {
         width: 100%;
         border: none;
+    }
+}
+
+.tags__description {
+    &.section {
+        padding-block: 32px 0 !important;
+    }
+
+    .tags__description-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+
+        @media(width < 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .tags__description-item {
+        min-height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 16px;
+        padding: 16px;
+        border-radius: 12px;
+        background-color: var(--primary-1);
+    }
+
+    .tags__description-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        background-color: #effaff;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 22px;
+        text-align: center;
+        color: var(--primary-100);
+        padding: 10px;
+        border: 1px solid var(--primary-100);
+
+        @media(width < 1240px) {
+            width: 44px;
+            height: 44px;
+            font-size: 18px;
+        }
+
+        img {
+            display: block;
+            width: 32px;
+            height: 32px;
+
+            @media(width < 1240px) {
+                width: 24px;
+                height: 24px;
+            }    
+
+        }
+    }
+
+    .tags__description-title {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 1.2;
+        color: var(--primary-100);
+        margin-bottom: 12px;
+
+        @media(width < 768px) {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+    }
+
+    p {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        color: var(--gray-80);
+
+        @media(width < 768px) {
+            font-size: 14px;
+        }
     }
 }
