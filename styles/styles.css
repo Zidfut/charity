@@ -1680,6 +1680,58 @@ body {
                 background-color: currentColor;
             }
         }
+
+        .organization__card-tags {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin-top: auto;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            @media(width < 1200px) {
+                gap: 10px;
+            }
+        }
+
+        .organization__card-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            background-color: #effaff;
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 22px;
+            text-align: center;
+            color: var(--primary-100);
+            padding: 10px;
+            border: 1px solid var(--primary-100);
+
+            @media(width < 1240px) {
+                width: 44px;
+                height: 44px;
+                font-size: 18px;
+            }
+
+            img {
+                display: block;
+                width: 32px;
+                height: 32px;
+
+                @media(width < 1240px) {
+                    width: 24px;
+                    height: 24px;
+                }    
+
+            }
+        }
     }
 
     .post-page__container {

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="libs/air-datepicker/air-datepicker.css">
     <link rel="stylesheet" href="styles/styles.css">
 
     <title>News</title>
@@ -54,6 +55,23 @@
         <div class="container page-description__container">
             <h1 class="h1 section-title">Новости</h1>
             <p>Узнайте о наших последних новостях, предстоящих благотворительных мероприятиях и историях о том, как наша сеть помощи изменила жизни людей.</p>
+        </div>
+    </section>
+
+    <section class="section search">
+        <div class="container search__container">
+            <div class="search__item">
+                <input type="text" placeholder="Поиск событий или новостей">
+            </div>
+            <div class="search__item">
+                <input type="text" placeholder="С даты" data-js-datepicker>
+            </div>
+            <div class="search__item">
+                <input type="text" placeholder="По дату" data-js-datepicker>
+            </div>
+            <div class="search__item">
+                <button class="btn btn--blue">Фильтры</button>
+            </div>
         </div>
     </section>
 
@@ -284,6 +302,7 @@
     </footer>
     
     <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="libs/air-datepicker/air-datepicker.js"></script>
     <script src="scripts/scripts.js"></script>
 
 </body>

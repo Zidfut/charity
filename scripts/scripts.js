@@ -45,5 +45,17 @@ document.addEventListener('DOMContentLoaded', () => {
             },
         },
     });
+
+
+    const isMobileDevice = () => window.matchMedia('(max-width: 576px)').matches;
+
+    const datepickers = document.querySelectorAll('[data-js-datepicker]');
+    datepickers.forEach((datepicker) => {    
+        const instance = new AirDatepicker(datepicker, {
+            autoClose: true,
+            dateFormat: 'd-MM-yyyy',
+            isMobile: isMobileDevice(),
+        });
+    });
     
 });
