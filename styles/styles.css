@@ -944,6 +944,7 @@ body {
             position: absolute;
             top: 15px;
             right: 15px;
+            margin-top: auto;
 
             @media(width < 1200px) {
                 gap: 10px;
